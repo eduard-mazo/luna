@@ -1,7 +1,9 @@
 <template lang="pug">
 .container
-  h1.title HOLA
-  router-link(:to="{name: 'hola'}") Next Page
+  .container
+    h1.title HOLA
+    router-link(:to="{name: 'hola'}") Next Page
+
   
 </template>
 
