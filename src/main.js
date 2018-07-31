@@ -9,9 +9,14 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faEnvelope,
   faLock,
-  faCalendar
+  faCalendar,
+  faSignInAlt
 } from "@fortawesome/free-solid-svg-icons";
-import { faKeycdn, faMailchimp, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faKeycdn,
+  faMailchimp,
+  faGithub
+} from "@fortawesome/free-brands-svg-icons";
 import {
   FontAwesomeIcon,
   FontAwesomeLayers,
@@ -22,7 +27,15 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.component("font-awesome-layers", FontAwesomeLayers);
 Vue.component("font-awesome-layers-text", FontAwesomeLayersText);
 
-library.add(faEnvelope, faLock, faKeycdn, faCalendar, faMailchimp, faGithub);
+library.add(
+  faEnvelope,
+  faLock,
+  faKeycdn,
+  faCalendar,
+  faMailchimp,
+  faGithub,
+  faSignInAlt
+);
 
 // explicit installation required in module environments
 Vue.use(VueFire);

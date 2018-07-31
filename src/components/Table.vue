@@ -2,14 +2,14 @@
 .container
   .container
     h1.title HOLA
-    router-link(:to="{name: 'hola'}") Next Page
+    p {{msg}}
+    router-link(:to="{name: 'login'}") Next Page
 
   
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"
