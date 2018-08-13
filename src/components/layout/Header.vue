@@ -10,7 +10,7 @@
     .navbar-menu(:class="[!isPublished ? 'is-active' : '']")
         .navbar-start(v-if="isLog")
             a.navbar-item 
-              router-link(:to="{name: 'table'}") table
+              router-link(:to="{name: 'register'}") REG
             a.navbar-item hola
             a.navbar-item hola
         .navbar-end(v-if="!isLog")

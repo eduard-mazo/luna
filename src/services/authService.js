@@ -5,3 +5,5 @@ export default {
     return api().post("register", credentials);
   }
 };
+
+

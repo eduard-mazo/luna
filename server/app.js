@@ -1,8 +1,19 @@
 import express from "express";
-import {question} from './routes'
+import bodyParser from "body-parser";
+import { question } from "./routes";
+import cors from "cors";
+import morgan from "morgan";
 
 const app = express();
-const PORT = 3000
-app.use("/api/question",question);
+app.use(bodyParser.json());
+app.use(morgan('combined'));
+app.use(cors());
 
-app.listen(PORT);
+//app.use("/api/question",question);
+app.post("/register", (req, res) => {
+  res.send({
+    message: `hi! ${req.body.email}`
+  });
+  
+});
+app.listen(process.env.PORT || 3000);

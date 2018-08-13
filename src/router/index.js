@@ -1,9 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Table from "@/components/Table";
+import Register from "@/components/Register";
 import Login from "@/components/Login";
 import Home from "@/components/Home";
-import VueRouter from "vue-router";
 
 const routes = [
   {
@@ -18,9 +17,9 @@ const routes = [
     component: Home
   },
   {
-    path: "/table",
-    name: "table",
-    component: Table
+    path: "/register",
+    name: "register",
+    component: Register
   }
 ];
 Vue.use(Router);
